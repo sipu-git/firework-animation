@@ -209,10 +209,10 @@ const FireworksBackground = forwardRef<HTMLDivElement, FireworksBackgroundProps>
       className,
       population = 1,
       color,
-      fireworkSpeed = { min: 4, max: 8 },
-      fireworkSize = { min: 1.5, max: 4 },
-      particleSpeed = { min: 2, max: 7 },
-      particleSize = { min: 1, max: 4 },
+      fireworkSpeed = { min: 2, max: 8 },
+      fireworkSize = { min: 1, max: 4 },
+      particleSpeed = { min: 2, max: 6 },
+      particleSize = { min: 1, max: 2 },
       autoPlay = true,
       ...props
     },
@@ -281,7 +281,7 @@ const FireworksBackground = forwardRef<HTMLDivElement, FireworksBackgroundProps>
     // schedule next launch
     const timeout = window.setTimeout(
       launchFirework,
-      Math.max(80, rand(400, 1000) / Math.max(1, population)),
+      Math.max(80, rand(600, 1000) / Math.max(1, population)),
     );
     timeouts.push(timeout);
   };

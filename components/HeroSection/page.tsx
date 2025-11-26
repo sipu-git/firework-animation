@@ -6,7 +6,7 @@ import GradientText from "@/components/ui/GradientText";
 
 export default function HeroSection() {
     return (
-        <div className="w-full h-screen relative flex flex-col justify-center items-center bg-black overflow-hidden">
+        <div  className="w-full h-screen relative flex flex-col justify-center items-center  overflow-hidden">
 
             {/* Fireworks Background */}
             <FireworksBackground
@@ -15,7 +15,7 @@ export default function HeroSection() {
                 color={["#ffcc00", "#ff0066", "#00ccff", "#ffffff"]}
                 canvasProps={{ className: "pointer-events-none" }}
             />
-
+84
             {/* Main Content */}
             <div className="relative w-full max-w-5xl z-10 flex flex-col justify-center items-center gap-2">
 

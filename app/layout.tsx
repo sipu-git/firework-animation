@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "New Year Animation",
+  title: "Firework Animation",
   description: "This is the New Year Animation App built with Next.js and React.",
 };
 
